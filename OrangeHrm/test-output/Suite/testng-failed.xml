@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.OH.e2e.Script">
+        <methods>
+          <include name="LaunchApplication" invocation-numbers="0"/>
+          <include name="Create"/>
+        </methods>
+      </class> <!-- com.OH.e2e.Script -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.OH.e2e.Script">
+        <methods>
+          <include name="LaunchApplication" invocation-numbers="0"/>
+          <include name="Create"/>
+        </methods>
+      </class> <!-- com.OH.e2e.Script -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
